@@ -3,9 +3,13 @@ import { log } from "console";
 import { type NextRequest } from "next/server";
 const api_endpoint = process.env.CONTOSO_CHAT_API_ENDPOINT!;
 
+// TODO: Give this a better name than 'vnext'.
+
+
 export async function POST(req: NextRequest) {
     const request_body = await req.json();
 
+    // TODO: What is the authentication mechanism?
     const headers = {
         "Content-Type": "application/json"
         //,

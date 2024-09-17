@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/chat/vnext HTTP/1.1
+Content-Type: application/json
+
+{
+    "customer_id": "2",
+    "question": "Tell me about hiking shoes",
+    "chat_history": []
+}
+
+
+###
+POST http://localhost:8000/api/create_response HTTP/1.1
+Content-Type: application/json
+
+{"chat_history":[],"question":"tell me about boots","customerId":"4"}

@@ -47,7 +47,7 @@ export const sendPromptFlowMessage = async (
 
   console.log(body);
 
-  const response = await fetch("/api/chat/promptflow", {
+  const response = await fetch("/api/chat/vnext", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
